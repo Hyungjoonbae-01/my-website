@@ -20,7 +20,7 @@ export default function ResumePage() {
 
         <div className="rounded-lg border">
           <div className="h-[calc(100vh-250px)] w-full min-h-[1150px]">
-            <iframe src="/hengjun-Pei-resume.pdf" className="h-full w-full" title="Hengjun Pei Resume"></iframe>
+            <iframe src="/Hengjun-Pei-Resume.pdf" className="h-full w-full" title="Hengjun Pei Resume"></iframe>
           </div>
         </div>
       </main>
