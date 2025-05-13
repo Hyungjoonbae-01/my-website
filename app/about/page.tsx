@@ -15,7 +15,7 @@ export default function AboutPage() {
             <h2 className="mb-4 text-xl font-semibold">Introduction</h2>
             <p className="mb-4 text-muted-foreground">
               I am a Computer Engineering student at the University of California, Irvine, with a focus on both computer
-              hardware and software systems.
+              hardware and software systems. 
             </p>
 
             {/* Hobbies Section */}
