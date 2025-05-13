@@ -12,7 +12,7 @@ export default function ResumePage() {
 
         <div className="mb-6 flex justify-end">
           <Button asChild>
-            <a href="/hengjun-pei-resume.pdf" download>
+            <a href="/Hengjun-Pei-Resume.pdf" download>
               <Download className="mr-2 h-4 w-4" /> Download Resume
             </a>
           </Button>
@@ -20,7 +20,7 @@ export default function ResumePage() {
 
         <div className="rounded-lg border">
           <div className="h-[calc(100vh-250px)] w-full min-h-[1150px]">
-            <iframe src="/hengjun-Pei-resume.pdf" className="h-full w-full" title="Hengjun Pei Resume"></iframe>
+            <iframe src="/Hengjun-Pei-Resume.pdf" className="h-full w-full" title="Hengjun Pei Resume"></iframe>
           </div>
         </div>
       </main>
