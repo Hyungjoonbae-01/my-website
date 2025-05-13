@@ -12,7 +12,7 @@ export default function ResumePage() {
 
         <div className="mb-6 flex justify-end">
           <Button asChild>
-            <a href="/hengjun-pei-resume.pdf" download>
+            <a href="/Hengjun-Pei-Resume.pdf" download>
               <Download className="mr-2 h-4 w-4" /> Download Resume
             </a>
           </Button>
