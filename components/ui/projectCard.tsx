@@ -25,6 +25,8 @@ export default function ProjectCard({
         transition-all duration-300
         hover:-translate-y-1
         hover:shadow-lg hover:shadow-black/5
+        rounded-xl border bg-gray-50 p-8
+        shadow-[0_-8px_24px_rgba(0,0,0,0.08),0_12px_24px_rgba(0,0,0,0.12)]
       "
     >
       <CardContent className="p-6 h-full">

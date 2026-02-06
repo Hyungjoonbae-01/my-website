@@ -13,7 +13,10 @@ export default function ExperiencePage() {
 
         <div className="flex flex-col gap-8">
           {/* CORSA LAB */}
-          <Card className="border bg-gray-50 shadow-sm">
+          <Card
+            className="rounded-xl border bg-gray-50 p-8
+              shadow-[0_-8px_24px_rgba(0,0,0,0.08),0_12px_24px_rgba(0,0,0,0.12)]"
+          >
             <CardContent className="p-6 space-y-5">
               <div>
                 <h2 className="text-xl font-semibold text-gray-900">
@@ -63,7 +66,10 @@ export default function ExperiencePage() {
             </CardContent>
           </Card>
           {/* OPS PROGRAM */}
-          <Card className="border bg-gray-50 shadow-sm">
+          <Card
+            className="rounded-xl border bg-gray-50 p-8
+              shadow-[0_-8px_24px_rgba(0,0,0,0.08),0_12px_24px_rgba(0,0,0,0.12)]"
+          >
             <CardContent className="p-6 space-y-5">
               <div>
                 <h2 className="text-xl font-semibold text-gray-900">
@@ -121,7 +127,10 @@ export default function ExperiencePage() {
           </Card>
 
           {/* COMPUTER TECHNICIAN */}
-          <Card className="border bg-gray-50 shadow-sm">
+          <Card
+            className="rounded-xl border bg-gray-50 p-8
+              shadow-[0_-8px_24px_rgba(0,0,0,0.08),0_12px_24px_rgba(0,0,0,0.12)]"
+          >
             <CardContent className="p-6 space-y-5">
               <div>
                 <h2 className="text-xl font-semibold text-gray-900">

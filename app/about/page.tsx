@@ -14,7 +14,12 @@ export default function AboutPage() {
 
         <div className="grid gap-10 md:grid-cols-1">
           {/* INTRODUCTION */}
-          <section className="rounded-xl border bg-gray-50 p-8 shadow-sm">
+          <section
+            className="
+              rounded-xl border bg-gray-50 p-8
+              shadow-[0_-8px_24px_rgba(0,0,0,0.08),0_12px_24px_rgba(0,0,0,0.12)]
+            "
+          >
             <h2 className="mb-5 text-2xl font-semibold text-gray-900">
               Introduction
             </h2>
@@ -63,21 +68,15 @@ export default function AboutPage() {
               </ul>
             </div>
           </section>
-
-          {/* IMAGE */}
-          {/*<div className="flex items-center justify-center">
-            <div className="rounded-xl border-4 border-gray-200 shadow-lg">
-              <img
-                src="/engineer-img.jpg"
-                alt="Hengjun Pei"
-                className="h-[350px] w-[450px] rounded-lg object-cover"
-              />
-            </div>
-          </div>*/}
         </div>
 
         {/* EDUCATION */}
-        <section className="mt-16 rounded-xl border bg-gray-50 p-8 shadow-sm">
+        <section
+          className="
+            mt-16 rounded-xl border bg-gray-50 p-8
+            shadow-[0_-8px_24px_rgba(0,0,0,0.08),0_12px_24px_rgba(0,0,0,0.12)]
+          "
+        >
           <div className="mb-6 flex items-center gap-2">
             <BookOpen className="h-5 w-5 text-primary" />
             <h2 className="text-2xl font-semibold text-gray-900">Education</h2>
@@ -116,14 +115,18 @@ export default function AboutPage() {
         </section>
 
         {/* SKILLS */}
-        <section className="mt-16 rounded-xl border bg-gray-50 p-8 shadow-sm">
+        <section
+          className="
+            mt-16 rounded-xl border bg-gray-50 p-8
+            shadow-[0_-8px_24px_rgba(0,0,0,0.08),0_12px_24px_rgba(0,0,0,0.12)]
+          "
+        >
           <div className="mb-6 flex items-center gap-2">
             <Briefcase className="h-5 w-5 text-primary" />
             <h2 className="text-2xl font-semibold text-gray-900">Skills</h2>
           </div>
 
           <div className="grid gap-8 md:grid-cols-3">
-            {/* TECH */}
             <SkillBlock
               title="Technical Skills"
               items={[
@@ -142,7 +145,6 @@ export default function AboutPage() {
               ]}
             />
 
-            {/* TOOLS */}
             <SkillBlock
               title="Tools"
               items={[
@@ -157,7 +159,6 @@ export default function AboutPage() {
               ]}
             />
 
-            {/* LANGUAGES */}
             <div className="rounded-lg border bg-white p-5">
               <h3 className="mb-4 text-sm font-semibold text-gray-900">
                 Languages
