@@ -17,23 +17,22 @@ export default function Home() {
   const [phase, setPhase] = useState<Phase>("TYPE_TITLE");
 
   return (
-    <div className="h-screen flex flex-col overflow-hidden bg-white">
+    <div className="min-h-screen flex flex-col bg-white">
       <Header />
 
-      <main className="container flex-1 flex items-center justify-center">
-        <div className="relative w-full max-w-3xl h-[45vh] rounded-xl overflow-hidden shadow-lg">
-          {/* Image */}
-          <img
-            src="/browser.png"
-            alt=""
-            className="absolute inset-0 w-full h-full object-cover"
-          />
-
-          {/* Overlay */}
+      <main className="container flex-1 flex items-start sm:items-center justify-center pt-8 sm:pt-0">
+        <div
+          className="
+    relative w-full max-w-3xl min-h-[60vh] sm:h-[45vh]
+    rounded-xl overflow-hidden
+    shadow-[0_-8px_24px_rgba(0,0,0,0.08),0_12px_24px_rgba(0,0,0,0.12)]
+  "
+        >
+          {/* Content Overlay */}
           <div className="absolute inset-0 flex items-center justify-center">
-            <div className="text-center space-y-6 px-6">
-              {/* TITLE */}
-              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl min-h-[1.2em]">
+            <div className="text-center space-y-4 sm:space-y-6 px-4 sm:px-6">
+              {/* Title */}
+              <h1 className="min-h-[1.2em] text-3xl font-bold tracking-tighter sm:text-4xl md:text-6xl">
                 <Typewriter
                   text="Hi, I'm Hengjun Pei"
                   active={phase === "TYPE_TITLE" || phase === "DELETE_TITLE"}
@@ -45,8 +44,8 @@ export default function Home() {
                 />
               </h1>
 
-              {/* SUBTITLE */}
-              <p className="text-xl text-muted-foreground md:text-2xl min-h-[1.2em]">
+              {/* Subtitle */}
+              <p className="min-h-[1.2em] text-base text-muted-foreground sm:text-lg md:text-2xl">
                 <Typewriter
                   text="Computer Engineering student at UC Irvine"
                   active={
@@ -58,7 +57,6 @@ export default function Home() {
                     if (phase === "TYPE_SUBTITLE") {
                       delay(2000, () => setPhase("DELETE_SUBTITLE"));
                     }
-
                     if (phase === "DELETE_SUBTITLE") {
                       setPhase("DELETE_TITLE");
                     }
@@ -66,7 +64,8 @@ export default function Home() {
                 />
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
+              {/* Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
                 <Button asChild size="lg">
                   <Link href="/projects">View My Work</Link>
                 </Button>
@@ -75,7 +74,8 @@ export default function Home() {
                 </Button>
               </div>
 
-              <div className="flex items-center gap-2 justify-center mt-8 pt-6 border-t">
+              {/* Email */}
+              <div className="flex items-center gap-2 justify-center pt-6 border-t">
                 <Mail className="h-5 w-5 text-primary" />
                 <a
                   href="mailto:peihengjun1830@gmail.com"
