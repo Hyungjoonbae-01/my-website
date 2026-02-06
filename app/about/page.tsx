@@ -1,128 +1,168 @@
-import Header from "@/components/header"
-import { BookOpen, Briefcase, Heart } from "lucide-react"
+import Header from "@/components/header";
+import { BookOpen, Briefcase, Heart } from "lucide-react";
 
 export default function AboutPage() {
   return (
-    <div className="bg-white">
+    <div className="bg-white min-h-screen">
       <Header />
 
-      <main className="container py-8">
-        <h1 className="mb-8 text-3xl font-bold">About Me</h1>
+      <main className="container py-12">
+        {/* PAGE TITLE */}
+        <h1 className="mb-12 text-4xl font-bold tracking-tight text-gray-900">
+          About Me
+        </h1>
 
-        <div className="grid gap-8 md:grid-cols-2">
-          {/* Introduction Section */}
-          <section className="rounded-lg border bg-gray-50/80 p-6 shadow-sm">
-            <h2 className="mb-4 text-xl font-semibold">Introduction</h2>
-            <p className="mb-4 text-muted-foreground">
-              I am a Computer Engineering student at the University of California, Irvine, with a focus on both computer
-              hardware and software systems. 
-            </p>
+        <div className="grid gap-10 md:grid-cols-1">
+          {/* INTRODUCTION */}
+          <section className="rounded-xl border bg-gray-50 p-8 shadow-sm">
+            <h2 className="mb-5 text-2xl font-semibold text-gray-900">
+              Introduction
+            </h2>
 
-            {/* Hobbies Section */}
-            <div className="mt-6">
+            <div className="space-y-5">
+              <p className="text-base leading-relaxed text-gray-600">
+                Hi, I'm Hengjun Pei. I am a Korean who was born in Russia and
+                raised in China and the United States. Although I was born in
+                Russia, ironically I don't speak any Russian at all. Luckily, I
+                am fluent in both Korean and Chinese, and I can also speak
+                conversational Japanese and proficient English.
+              </p>
+
+              <p className="text-base leading-relaxed text-gray-600">
+                I am currently a Computer Engineering student at the University
+                of California, Irvine, where I am pursuing my passion for
+                technology and innovation. I have a strong interest in software
+                development, hardware design, and everything in between. I am
+                always eager to learn new skills and take on new challenges. I
+                would love to connect with people with similar interests, so
+                feel free to reach out to me!
+              </p>
+            </div>
+
+            {/* HOBBIES */}
+            <div className="mt-8">
               <div className="mb-4 flex items-center gap-2">
                 <Heart className="h-5 w-5 text-primary" />
-                <h2 className="text-xl font-semibold">Hobbies & Interests</h2>
+                <h3 className="text-xl font-semibold text-gray-900">
+                  Hobbies & Interests
+                </h3>
               </div>
 
-              <div className="rounded-lg border bg-white p-4">
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-2">
-                    <span className="mt-1 inline-block h-2 w-2 rounded-full bg-primary"></span>
-                    <span>Playing League of Legends</span>
+              <ul className="space-y-3 rounded-lg border bg-white p-5">
+                {[
+                  "Solving LeetCode Problems",
+                  "Playing League of Legends",
+                  "Working Out",
+                  "Watching TV Shows",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <span className="mt-2 h-2 w-2 rounded-full bg-primary" />
+                    <span className="text-sm text-gray-600">{item}</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="mt-1 inline-block h-2 w-2 rounded-full bg-primary"></span>
-                    <span>Working Out</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="mt-1 inline-block h-2 w-2 rounded-full bg-primary"></span>
-                    <span>Watching Shows</span>
-                  </li>
-                </ul>
-              </div>
+                ))}
+              </ul>
             </div>
           </section>
 
-          {/* Image Section */}
-          <div className="flex items-center justify-center">
-            <div className="rounded-lg border-4 border-gray-200 shadow-lg">
+          {/* IMAGE */}
+          {/*<div className="flex items-center justify-center">
+            <div className="rounded-xl border-4 border-gray-200 shadow-lg">
               <img
                 src="/engineer-img.jpg"
-                alt="Hengjun Pei - Computer Engineering Student"
-                className="h-[350px] w-[450px] object-cover"
+                alt="Hengjun Pei"
+                className="h-[350px] w-[450px] rounded-lg object-cover"
               />
             </div>
-          </div>
+          </div>*/}
         </div>
 
-        {/* Education Section */}
-        <section className="mt-10 rounded-lg border bg-gray-50/80 p-6 shadow-sm">
-          <div className="mb-4 flex items-center gap-2">
+        {/* EDUCATION */}
+        <section className="mt-16 rounded-xl border bg-gray-50 p-8 shadow-sm">
+          <div className="mb-6 flex items-center gap-2">
             <BookOpen className="h-5 w-5 text-primary" />
-            <h2 className="text-xl font-semibold">Education</h2>
+            <h2 className="text-2xl font-semibold text-gray-900">Education</h2>
           </div>
 
           <div className="grid gap-6 md:grid-cols-3">
-            <div className="rounded-lg border bg-white p-4">
-              <h3 className="font-medium text-primary">University of California, Irvine</h3>
-              <p className="font-medium">Bachelor of Science, Computer Engineering</p>
-              <p className="text-sm text-muted-foreground">Expected March 2027</p>
-            </div>
-
-            <div className="rounded-lg border bg-white p-4">
-              <h3 className="font-medium text-primary">Pierce College, Woodland Hills</h3>
-              <p className="font-medium">Associate's Degree: Physics, Computer Engineering, Mathematics</p>
-              <p className="text-sm text-muted-foreground">Graduated June 2024</p>
-            </div>
-
-            <div className="rounded-lg border bg-white p-4">
-              <h3 className="font-medium text-primary">Granada Hills Charter High School</h3>
-              <p className="font-medium">High School Diploma</p>
-              <p className="text-sm text-muted-foreground">Graduated June 2021</p>
-            </div>
+            {[
+              {
+                school: "University of California, Irvine",
+                degree: "Bachelor of Science, Computer Engineering",
+                date: "Expected March 2027",
+              },
+              {
+                school: "Pierce College, Woodland Hills",
+                degree:
+                  "Associate's Degree: Physics, Computer Engineering, Mathematics",
+                date: "Graduated June 2024",
+              },
+              {
+                school: "Granada Hills Charter High School",
+                degree: "High School Diploma",
+                date: "Graduated June 2021",
+              },
+            ].map((edu) => (
+              <div key={edu.school} className="rounded-lg border bg-white p-5">
+                <h3 className="text-sm font-semibold text-primary">
+                  {edu.school}
+                </h3>
+                <p className="mt-1 text-sm font-medium text-gray-800">
+                  {edu.degree}
+                </p>
+                <p className="mt-1 text-xs text-gray-500">{edu.date}</p>
+              </div>
+            ))}
           </div>
         </section>
 
-        {/* Skills Section */}
-        <section className="mt-10 rounded-lg border bg-gray-50/80 p-6 shadow-sm">
-          <div className="mb-4 flex items-center gap-2">
+        {/* SKILLS */}
+        <section className="mt-16 rounded-xl border bg-gray-50 p-8 shadow-sm">
+          <div className="mb-6 flex items-center gap-2">
             <Briefcase className="h-5 w-5 text-primary" />
-            <h2 className="text-xl font-semibold">Skills</h2>
+            <h2 className="text-2xl font-semibold text-gray-900">Skills</h2>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-3">
-            <div className="rounded-lg border bg-white p-4">
-              <h3 className="mb-4 font-bold text-primary">Technical Skills</h3>
-              <div className="flex flex-wrap gap-2">
-                <span className="rounded-full bg-gray-100 px-3 py-1 text-xs">C</span>
-                <span className="rounded-full bg-gray-100 px-3 py-1 text-xs">C++</span>
-                <span className="rounded-full bg-gray-100 px-3 py-1 text-xs">Java</span>
-                <span className="rounded-full bg-gray-100 px-3 py-1 text-xs">JavaScript</span>
-                <span className="rounded-full bg-gray-100 px-3 py-1 text-xs">Python</span>
-                <span className="rounded-full bg-gray-100 px-3 py-1 text-xs">HTML</span>
-                <span className="rounded-full bg-gray-100 px-3 py-1 text-xs">Shell scripting</span>
-                <span className="rounded-full bg-gray-100 px-3 py-1 text-xs">Verilog</span>
-                <span className="rounded-full bg-gray-100 px-3 py-1 text-xs">React</span>
-              </div>
-            </div>
+          <div className="grid gap-8 md:grid-cols-3">
+            {/* TECH */}
+            <SkillBlock
+              title="Technical Skills"
+              items={[
+                "C",
+                "C++",
+                "Java",
+                "JavaScript",
+                "TypeScript",
+                "Python",
+                "HTML",
+                "Shell scripting",
+                "Verilog",
+                "React",
+                "Embedded Systems",
+                "Computer Networks",
+              ]}
+            />
 
-            <div className="rounded-lg border bg-white p-4">
-              <h3 className="mb-4 font-bold text-primary">Tools</h3>
-              <div className="flex flex-wrap gap-2">
-                <span className="rounded-full bg-gray-100 px-3 py-1 text-xs">MATLAB</span>
-                <span className="rounded-full bg-gray-100 px-3 py-1 text-xs">VIVADO</span>
-                <span className="rounded-full bg-gray-100 px-3 py-1 text-xs">Microsoft Office</span>
-                <span className="rounded-full bg-gray-100 px-3 py-1 text-xs">Git</span>
-                <span className="rounded-full bg-gray-100 px-3 py-1 text-xs">GitHub</span>
-                <span className="rounded-full bg-gray-100 px-3 py-1 text-xs">MySQL</span>
-                <span className="rounded-full bg-gray-100 px-3 py-1 text-xs">Firebase</span>
-              </div>
-            </div>
+            {/* TOOLS */}
+            <SkillBlock
+              title="Tools"
+              items={[
+                "MATLAB",
+                "VIVADO",
+                "Microsoft Office",
+                "Git",
+                "GitHub",
+                "MySQL",
+                "Firebase",
+                "MongoDB",
+              ]}
+            />
 
-            <div className="rounded-lg border bg-white p-4">
-              <h3 className="mb-4 font-bold text-primary">Languages</h3>
-              <ul className="space-y-2 text-muted-foreground">
+            {/* LANGUAGES */}
+            <div className="rounded-lg border bg-white p-5">
+              <h3 className="mb-4 text-sm font-semibold text-gray-900">
+                Languages
+              </h3>
+              <ul className="space-y-2 text-sm text-gray-600">
                 <li>Korean (Native)</li>
                 <li>Chinese (Native)</li>
                 <li>Japanese (Conversational)</li>
@@ -133,5 +173,25 @@ export default function AboutPage() {
         </section>
       </main>
     </div>
-  )
+  );
+}
+
+/* ---------- Helper ---------- */
+
+function SkillBlock({ title, items }: { title: string; items: string[] }) {
+  return (
+    <div className="rounded-lg border bg-white p-5">
+      <h3 className="mb-4 text-sm font-semibold text-gray-900">{title}</h3>
+      <div className="flex flex-wrap gap-2">
+        {items.map((item) => (
+          <span
+            key={item}
+            className="rounded-full bg-gray-100 px-3 py-1 text-[11px] text-gray-700"
+          >
+            {item}
+          </span>
+        ))}
+      </div>
+    </div>
+  );
 }
