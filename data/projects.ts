@@ -24,18 +24,6 @@ export const projects = [
   },
 
   {
-    title: "GOOD-VIBE CLOCK",
-    image: "GOOD-VIBE-CLOCK.png",
-    period: "April 2025",
-    description: [
-      "An embedded systems project built with an ESP32 microcontroller, OLED display, and DFPlayer Mini audio module that functions as an interactive talking clock.",
-      "The system supports two user-controlled modes via physical buttons: a compliment mode that selects a stored compliment, displays it on the OLED screen, and plays a corresponding audio file through a speaker, and a time mode that retrieves, displays, and speaks the current time.",
-      "The project required integrating multiple peripherals, handling button input logic, managing display updates, and synchronizing audio playback, demonstrating practical embedded programming and hardware–software integration.",
-    ],
-    techs: ["Arduino", "C++", "Hardware Design", "Gemini API"],
-  },
-
-  {
     title: "JJOA",
     image: "JJOA.png",
     period: "July 2025 - August 2025",
@@ -67,6 +55,23 @@ export const projects = [
     ],
     link: "https://dreammap-fe.netlify.app/",
   },
+  {
+    title: "Mammographic Mass Classifier",
+    period: "December 2025",
+    description: [
+      "A machine learning project focused on classifying mammographic masses as benign or malignant using structured medical imaging metadata from the UCI Mammographic Mass dataset.",
+      "Performed data cleaning, exploratory data analysis, feature engineering, and preprocessing to handle missing values and improve model reliability. Multiple classification models were implemented and compared, including Logistic Regression, K-Nearest Neighbors, Decision Trees, Random Forests, Naive Bayes, Support Vector Machines, and Neural Networks.",
+      "Model performance was evaluated using accuracy, precision, recall, and confusion matrices to assess diagnostic reliability.",
+    ],
+    techs: [
+      "Python",
+      "Machine Learning",
+      "Scikit-learn",
+      "Pandas",
+      "NumPy",
+      "Tensorflow",
+    ],
+  },
 
   {
     title: "DRONE PROJECT",
@@ -89,7 +94,7 @@ export const projects = [
       "The project involves developing the mechanical structure, electrical system, and supporting software required to operate and coordinate the robot as an integrated whole. On the mechanical side, contributed to the iterative design and refinement of the robot’s sub-arm mechanism, focusing on alignment checks, mechanical stability, and functional integration.",
       "On the software side, motor control was implemented using C to directly manage actuator behavior at a low level, while Python was used to develop higher-level control logic and hardware interfaces for coordinating system movements. YOLO-based computer vision was integrated to provide visual perception, with detected information connected to a chatbot that interprets and describes the robot’s surroundings. Future work focuses on transitioning toward AI-driven autonomous control.",
     ],
-    techs: ["C", "Python", "Motor Control", "YOLO", "Robotics Systems"],
+    techs: ["C", "Python", "YOLO", "Telemetry", "Arduino"],
   },
 
   {

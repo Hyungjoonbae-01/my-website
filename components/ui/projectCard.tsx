@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 type ProjectCardProps = {
   title: string;
-  image: string;
+  image?: string; // allow undefined / empty
   period: string;
   description: string[];
   techs: string[];
@@ -17,6 +17,8 @@ export default function ProjectCard({
   techs,
   link,
 }: ProjectCardProps) {
+  const hasImage = Boolean(image);
+
   return (
     <Card
       className="
@@ -30,27 +32,33 @@ export default function ProjectCard({
       "
     >
       <CardContent className="p-6 h-full">
-        <div className="flex h-full flex-col gap-6 md:flex-row">
-          {/* Image (LOCKED SIZE) */}
-          <div className="md:w-1/3">
-            <div className="relative aspect-[4/3] overflow-hidden rounded-md bg-muted">
-              <img
-                src={image}
-                alt={title}
-                className="
-                  absolute inset-0
-                  h-full w-full
-                  object-contain
-                  transition-transform duration-300
-                  hover:scale-[1.02]
-                "
-              />
-              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
+        <div
+          className={`flex h-full flex-col gap-6 ${
+            hasImage ? "md:flex-row" : ""
+          }`}
+        >
+          {/* Image (ONLY render if exists) */}
+          {hasImage && (
+            <div className="md:w-1/3">
+              <div className="relative aspect-[4/3] overflow-hidden rounded-md bg-muted">
+                <img
+                  src={image}
+                  alt={title}
+                  className="
+                    absolute inset-0
+                    h-full w-full
+                    object-contain
+                    transition-transform duration-300
+                    hover:scale-[1.02]
+                  "
+                />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
+              </div>
             </div>
-          </div>
+          )}
 
           {/* Content */}
-          <div className="md:w-2/3 flex flex-col">
+          <div className={`${hasImage ? "md:w-2/3" : "w-full"} flex flex-col`}>
             <h3 className="mb-1 text-xl font-semibold tracking-tight">
               {title}
             </h3>

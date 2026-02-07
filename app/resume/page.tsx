@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button"
-import { Download } from "lucide-react"
-import Header from "@/components/header"
+import { Button } from "@/components/ui/button";
+import { Download } from "lucide-react";
+import Header from "@/components/header";
 
 export default function ResumePage() {
   return (
@@ -20,10 +20,14 @@ export default function ResumePage() {
 
         <div className="rounded-lg border">
           <div className="h-[calc(100vh-250px)] w-full min-h-[1150px]">
-            <iframe src="/Hengjun-Pei-Resume.pdf" className="h-full w-full" title="Hengjun Pei Resume"></iframe>
+            <iframe
+              src="/Hengjun-Pei-Resume.pdf"
+              className="h-full w-full"
+              title="Hengjun Pei Resume"
+            ></iframe>
           </div>
         </div>
       </main>
     </div>
-  )
+  );
 }

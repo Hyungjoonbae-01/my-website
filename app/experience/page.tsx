@@ -23,12 +23,16 @@ export default function ExperiencePage() {
                   Undergraduate Research Assistant — CORSA Lab
                 </h2>
                 <p className="mb-3 text-sm text-muted-foreground">
+                  September 2025 - present
+                </p>
+                <p className="mb-3 text-sm text-muted-foreground">
                   University of California, Irvine
                 </p>
-                <p className="text-sm text-gray-500">
-                  Tiny & Ternary Large Language Models
-                </p>
               </div>
+
+              <p className="text-sm font-semibold ">
+                Tiny & Ternary Large Language Models
+              </p>
 
               <p className="text-gray-600 leading-relaxed">
                 Assisted with ongoing research at the CORSA Lab focused on
@@ -136,6 +140,10 @@ export default function ExperiencePage() {
                 <h2 className="text-xl font-semibold text-gray-900">
                   Computer Technician
                 </h2>
+
+                <p className="mb-3 text-sm text-muted-foreground">
+                  June 2023 – September 2024
+                </p>
                 <p className="text-sm text-gray-500">Computer Annex</p>
               </div>
 
@@ -180,6 +188,194 @@ export default function ExperiencePage() {
                     technical questions, ensuring clear communication and
                     reliable support
                   </span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          {/* HACKATHON — DREAM */}
+          <Card
+            className="rounded-xl border bg-gray-50 p-8
+    shadow-[0_-8px_24px_rgba(0,0,0,0.08),0_12px_24px_rgba(0,0,0,0.12)]"
+          >
+            <CardContent className="p-6 space-y-5">
+              <div>
+                <h2 className="text-xl font-semibold text-gray-900">
+                  Hackathon — DREAM AI Hackathon
+                </h2>
+                <p className="mb-3 text-sm text-muted-foreground">
+                  June 21-22, 2025
+                </p>
+                <p className="text-sm text-gray-500">The Foundry, Boston</p>
+              </div>
+
+              <p className="text-gray-600 leading-relaxed">
+                Participated in the DREAM AI Hackathon in Boston as part of a
+                multidisciplinary team, addressing a real-world healthcare
+                bottleneck where hospitals in Korea face limited bed
+                availability and delayed patient routing during time-critical
+                situations.
+              </p>
+
+              <ul className="space-y-4 text-sm text-gray-600">
+                <li className="flex items-start gap-3">
+                  <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary" />
+                  <span>
+                    <strong>MediRoute</strong> — Collaboratively developed an
+                    AI-assisted system to streamline patient routing by
+                    collecting patient information, contacting multiple
+                    hospitals, and filtering facilities based on real-time bed
+                    availability and response status.
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary" />
+                  <span>
+                    Designed an AI-driven pipeline to convert structured patient
+                    data into descriptive summaries and voice-based outputs to
+                    support faster medical routing and communication.
+                  </span>
+                </li>
+
+                <li className="flex items-start gap-3">
+                  <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary" />
+                  <span>
+                    Contributed to system logic, data flow design, and
+                    integration between backend services, AI analysis, and
+                    user-facing components within a tight hackathon timeline.
+                  </span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          {/* HACKATHON */}
+          <Card
+            className="rounded-xl border bg-gray-50 p-8
+    shadow-[0_-8px_24px_rgba(0,0,0,0.08),0_12px_24px_rgba(0,0,0,0.12)]"
+          >
+            <CardContent className="p-6 space-y-5">
+              <div>
+                <h2 className="text-xl font-semibold text-gray-900">
+                  Hackathon — BitHacks @ UCI
+                </h2>
+                <p className="mb-3 text-sm text-muted-foreground">
+                  April 11 – 13, 2025
+                </p>
+                <p className="text-sm text-gray-500">
+                  University of California, Irvine
+                </p>
+              </div>
+
+              <p className="text-gray-600 leading-relaxed">
+                Participated in BitHacks at UC Irvine, collaborating in a
+                fast-paced hackathon environment to design and build an embedded
+                systems project within a limited timeframe. The project focused
+                on creative hardware– software integration and real-time user
+                interaction.
+              </p>
+
+              <ul className="space-y-4 text-sm text-gray-600">
+                <li className="flex items-start gap-3">
+                  <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary" />
+                  <span>
+                    <strong>GOOD-VIBE CLOCK</strong> — Built an interactive
+                    talking clock using an ESP32, OLED display, and DFPlayer
+                    Mini that supports a compliment mode and a time-speaking
+                    mode controlled via physical buttons.
+                  </span>
+                </li>
+
+                <li className="flex items-start gap-3">
+                  <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary" />
+                  <span>
+                    Implemented button input logic, display updates, and
+                    synchronized audio playback to deliver real-time visual and
+                    voice feedback.
+                  </span>
+                </li>
+
+                <li className="flex items-start gap-3">
+                  <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary" />
+                  <span>
+                    Integrated multiple peripherals under time constraints,
+                    demonstrating practical embedded programming, debugging, and
+                    hardware–software coordination.
+                  </span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          {/* CERTIFICATIONS */}
+          <Card
+            className="rounded-xl border bg-gray-50 p-8
+    shadow-[0_-8px_24px_rgba(0,0,0,0.08),0_12px_24px_rgba(0,0,0,0.12)]"
+          >
+            <CardContent className="p-6 space-y-6">
+              <div>
+                <h2 className="text-xl font-semibold text-gray-900">
+                  Certifications
+                </h2>
+                <p className="text-sm text-gray-500">
+                  Machine Learning, Data Science, and AI Foundations
+                </p>
+              </div>
+
+              <ul className="space-y-5 text-sm text-gray-600">
+                {/* UDEMY */}
+                <li className="flex items-start gap-3">
+                  <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary" />
+                  <div>
+                    <p className="font-semibold text-gray-900">
+                      Machine Learning, Data Science & AI Engineering with
+                      Python
+                    </p>
+                    <p className="text-sm text-muted-foreground">
+                      Udemy · Sundog Education (Frank Kane)
+                    </p>
+                    <p className="mt-1 leading-relaxed">
+                      Completed an end-to-end course covering supervised and
+                      unsupervised learning, data preprocessing, model
+                      evaluation, and practical AI workflows using Python and
+                      industry-standard tools.
+                    </p>
+                    <a
+                      href="https://www.udemy.com/certificate/UC-66f48f21-3ee1-4e73-a776-a13762b467aa/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary hover:underline text-sm font-medium"
+                    >
+                      View Certificate
+                    </a>
+                  </div>
+                </li>
+
+                {/* COURSERA / IBM */}
+                <li className="flex items-start gap-3">
+                  <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary" />
+                  <div>
+                    <p className="font-semibold text-gray-900">
+                      Exploratory Data Analysis for Machine Learning
+                    </p>
+                    <p className="text-sm text-muted-foreground">
+                      IBM · Coursera
+                    </p>
+                    <p className="mt-1 leading-relaxed">
+                      Gained hands-on experience analyzing datasets for machine
+                      learning, focusing on data visualization, statistical
+                      insights, feature understanding, and preparing data for
+                      downstream ML models.
+                    </p>
+                    <a
+                      href="https://www.coursera.org/account/accomplishments/verify/4SEGMP7HRDFH"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary hover:underline text-sm font-medium"
+                    >
+                      View Certificate
+                    </a>
+                  </div>
                 </li>
               </ul>
             </CardContent>
