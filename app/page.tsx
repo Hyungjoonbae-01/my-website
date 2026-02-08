@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/header";
-import { Mail } from "lucide-react";
+import { Mail, GithubIcon, LinkedinIcon } from "lucide-react";
 import Typewriter from "@/components/typewriter";
 
 type Phase =
@@ -74,15 +74,41 @@ export default function Home() {
                 </Button>
               </div>
 
-              {/* Email */}
-              <div className="flex items-center gap-2 justify-center pt-6 border-t">
-                <Mail className="h-5 w-5 text-primary" />
-                <a
-                  href="mailto:peihengjun1830@gmail.com"
-                  className="text-primary hover:underline"
-                >
-                  peihengjun1830@gmail.com
-                </a>
+              {/* Contact Links */}
+              <div className="pt-6 border-t flex flex-col items-center gap-4">
+                {/* Email */}
+                <div className="flex items-center gap-2">
+                  <Mail className="h-5 w-5 text-primary" />
+                  <a
+                    href="mailto:peihengjun1830@gmail.com"
+                    className="text-primary hover:underline"
+                  >
+                    peihengjun1830@gmail.com
+                  </a>
+                </div>
+
+                {/* GitHub & LinkedIn */}
+                <div className="flex gap-6">
+                  <a
+                    href="https://github.com/Hyungjoonbae-01"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    <GithubIcon className="h-5 w-5" />
+                    <span className="text-sm">GitHub</span>
+                  </a>
+
+                  <a
+                    href="https://www.linkedin.com/in/hengjun-pei-4070b9359/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    <LinkedinIcon className="h-5 w-5" />
+                    <span className="text-sm">LinkedIn</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
