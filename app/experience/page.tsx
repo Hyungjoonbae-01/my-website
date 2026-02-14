@@ -13,7 +13,7 @@ export default function ExperiencePage() {
 
         <div className="flex flex-col gap-8">
           {/* CORSA LAB */}
-          <Card
+          {/*<Card
             className="rounded-xl border bg-gray-50 p-8
               shadow-[0_-8px_24px_rgba(0,0,0,0.08),0_12px_24px_rgba(0,0,0,0.12)]"
           >
@@ -68,7 +68,7 @@ export default function ExperiencePage() {
                 </li>
               </ul>
             </CardContent>
-          </Card>
+          </Card>*/}
           {/* OPS PROGRAM */}
           <Card
             className="rounded-xl border bg-gray-50 p-8
